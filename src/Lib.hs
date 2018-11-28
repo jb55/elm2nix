@@ -10,6 +10,7 @@ module Lib
 import Control.Concurrent.Async
 import Control.Monad.Trans.Except (ExceptT, runExceptT, throwE)
 import Control.Monad (liftM2)
+import Data.Monoid ((<>))
 import Control.Monad.Except (liftIO, MonadIO)
 import Data.Aeson (Value(..))
 import Data.List (intercalate)
